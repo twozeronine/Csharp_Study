@@ -170,12 +170,19 @@ namespace Class
       /////////////////////
       // //Class_ReadonlyMethod.cs
       /////////////////////
-      ACSetting acs;
-      acs.currentInCelsius = 25;
-      acs.target = 25;
+      // ACSetting acs;
+      // acs.currentInCelsius = 25;
+      // acs.target = 25;
 
-      Console.WriteLine($"{acs.GetFahrenheit()}");
-      Console.WriteLine($"{acs.target}");
+      // Console.WriteLine($"{acs.GetFahrenheit()}");
+      // Console.WriteLine($"{acs.target}");
+
+
+
+      /////////////////////
+      // //Class_Tuple.cs
+      /////////////////////
+      TupleApp.TupleExample();
     }
   }
 }
