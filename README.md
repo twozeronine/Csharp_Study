@@ -6,4 +6,4 @@ Today I Learned (TIL)
 
 ### 목록
 
-- [Class](https://github.com/twozeronine/Csharp_Study/blob/main/Class/README.md)
+- [Class](https://github.com/twozeronine/Csharp_Study/tree/main/Class)
