@@ -8,7 +8,7 @@ namespace Class
     static void Main(string[] args)
     {
       /////////////////////
-      // //Class_this.cs
+      ////Class_this.cs
       /////////////////////
       // Employee pooh = new Employee();
       // pooh.SetName("Pooh");
@@ -56,7 +56,7 @@ namespace Class
       //   Console.WriteLine("cat2 is not a Cat");
 
       /////////////////////
-      // //Class_overriding.cs
+      ////Class_overriding.cs
       /////////////////////
       // Console.WriteLine("Creating ArmorSuite...");
       // ArmorSuite armorSuite = new ArmorSuite();
@@ -71,7 +71,7 @@ namespace Class
       // warMachine.Initialize();
 
       /////////////////////
-      // //Class_deepCopy.cs
+      ////Class_deepCopy.cs
       /////////////////////
       // Console.WriteLine("Shallow Copy");
       // {
@@ -101,7 +101,7 @@ namespace Class
       // }
 
       /////////////////////
-      // //Class_methodHiding.cs
+      ////Class_methodHiding.cs
       /////////////////////
       // Base2 baseObj = new Base2();
       // baseObj.MyMethod();   //Base.MyMethod()
@@ -113,7 +113,7 @@ namespace Class
       // baseOrDerived.MyMethod(); //Base.MyMethod() 출력 다형성 형성 표현 못함
 
       /////////////////////
-      // //Class_NestedClass.cs
+      ////Class_NestedClass.cs
       /////////////////////
       // Configuration2 config2 = new Configuration2();
       // config2.SetConfig("Version", "V 5.0");
@@ -126,7 +126,7 @@ namespace Class
       // Console.WriteLine(config2.GetConfig("Version"));
 
       /////////////////////
-      // //Class_PartialClass.cs
+      ////Class_PartialClass.cs
       /////////////////////
       // MyPartialClass obj = new MyPartialClass();
       // obj.Method1();
@@ -135,7 +135,7 @@ namespace Class
       // obj.Method4();
 
       /////////////////////
-      // //Class_ExtensionMethod.cs
+      ////Class_ExtensionMethod.cs
       /////////////////////
       // Console.WriteLine($"3^2 : {3.Square()}");
       // Console.WriteLine($"3^4 : {3.Power(4)}");
@@ -143,7 +143,7 @@ namespace Class
       // Console.WriteLine("Hello".Append(",World!"));
 
       /////////////////////
-      // //Class_Struct.cs
+      ////Class_Struct.cs
       /////////////////////
       // Point3D p3d1;
       // p3d1.X = 10;
@@ -160,7 +160,7 @@ namespace Class
       // Console.WriteLine(p3d3.ToString());
 
       /////////////////////
-      // //Class_ReadonlyStruct.cs
+      ////Class_ReadonlyStruct.cs
       /////////////////////
       // RGBColor Red = new RGBColor(255, 0, 0);
       // //읽기 전용 필드에는 할당할 수 없습니다. 단, 필드가 정의된 형식의 생성자 또는 초기값 전용 setter나 변수 이니셜라이저에서는 예외입니다.
@@ -168,7 +168,7 @@ namespace Class
 
 
       /////////////////////
-      // //Class_ReadonlyMethod.cs
+      ////Class_ReadonlyMethod.cs
       /////////////////////
       // ACSetting acs;
       // acs.currentInCelsius = 25;
@@ -180,9 +180,24 @@ namespace Class
 
 
       /////////////////////
-      // //Class_Tuple.cs
+      ////Class_Tuple.cs
       /////////////////////
-      TupleApp.TupleExample();
+      //TupleApp.TupleExample();
+
+
+      /////////////////////
+      ////Class_PositionalPattern.cs
+      /////////////////////
+
+      var alice = (job: "학생", age: 17);
+      var bob = (job: "학생", age: 23);
+      var charlie = (job: "일반", age: 15);
+      var dave = (job: "일반", age: 21);
+
+      Console.WriteLine($"alice :{TupleApp2.GetDiscountRate(alice)}");
+      Console.WriteLine($"bob :{TupleApp2.GetDiscountRate(bob)}");
+      Console.WriteLine($"charlie :{TupleApp2.GetDiscountRate(charlie)}");
+      Console.WriteLine($"dave :{TupleApp2.GetDiscountRate(dave)}");
     }
   }
 }
