@@ -1,22 +1,3 @@
-# 목록
-
-- [깊은 복사](#class-deepcopy.cs)
-- [this](#class_this.cs)
-- [상속](#class_inheritance.cs)
-- [typecasting](#class_typeCasting.cs)
-- [오버라이딩과 다형성](#class_overriding.cs)
-- [메소드 숨기기](#class_methodhiding.cs)
-- [readonlyfields](#class_readonlyfields.cs)
-- [중첩 클래스](#class_nestedclass.cs)
-- [분할 클래스](#class_partialclass.cs)
-- [확장 메소드](#class_extensionmethod.cs)
-- [구조체](#class_structure.cs)
-- [readonlystruct](#class_readonlystruct.cs)
-- [readonlymethod](#class_readonlymethod.cs)
-- [tuple](#class_tuple.cs)
-- [postionalpatternopy](#Class_PostionalPattern.cs)
-- [핵심 키워드](#class에서-사용되는-키워드)
-
 ## Class deepCopy.cs
 
 객체 깊은복사하기
