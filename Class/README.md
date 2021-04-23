@@ -1,3 +1,21 @@
+#목차
+[깊은 복사](#class_deepcopy.cs)
+[this](#class_this.cs)
+[상속](#class_inheritance.cs)
+[typecasting](#class_typeCasting.cs)
+[오버라이딩과 다형성](#class_overriding.cs)
+[메소드 숨기기](#class_methodhiding.cs)
+[readonlyfields](#class_readonlyfields.cs)
+[중첩 클래스](#class_nestedclass.cs)
+[분할 클래스](#class_partialclass.cs)
+[확장 메소드](#class_extensionmethod.cs)
+[구조체](#class_structure.cs)
+[readonlystruct](#class_readonlystruct.cs)
+[readonlymethod](#class_readonlymethod.cs)
+[tuple](#class_tuple.cs)
+[postionalpatternopy](#class_postionalpattern.cs)
+[핵심 키워드](#class에서-사용되는-키워드)
+
 ## Class_deepCopy.cs
 
 객체 깊은복사하기
@@ -120,3 +138,22 @@ new 키워드를 사용.
 
 튜플에는 분해자가 구현되어있어 분해가 가능함.
 튜플 분해를 사용하여 switch 식에 적용할 수 있음.
+
+## Class에서 사용되는 키워드
+
+클래스
+
+- 객체를 만들기 위한 설계도 혹은 틀
+
+객체
+
+- 클래스의 타입으로 선언된 실체
+
+인스턴스
+
+- 설계도를 바탕으로 메모리에 할당된 구체적인 실체
+
+this,base
+
+- this: 클래스의 현재 인스턴스를 가르킴.
+- base: 파생 클래스 내에서 기반 클래스의 멤버에 엑세스 하는데 사용, 다른언어에서의 super
