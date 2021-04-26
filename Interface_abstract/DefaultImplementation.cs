@@ -18,16 +18,16 @@ class ConsoleLogger3 : ILogger2
   }
 }
 
-class MainApp
-{
-  static void Main(string[] args)
-  {
-    ILogger2 logger = new ConsoleLogger3();
-    logger.WriteLog("System Up");
-    logger.WriteError("System Fail");
+// class MainApp
+// {
+//   static void Main(string[] args)
+//   {
+//     ILogger2 logger = new ConsoleLogger3();
+//     logger.WriteLog("System Up");
+//     logger.WriteError("System Fail");
 
-    ConsoleLogger3 clogger = new ConsoleLogger3();
-    clogger.WriteLog("System Up"); // OK
-    // clogger.WriteError("System Fail"); // 컴파일 에러
-  }
-}
+//     ConsoleLogger3 clogger = new ConsoleLogger3();
+//     clogger.WriteLog("System Up"); // OK
+//     // clogger.WriteError("System Fail"); // 컴파일 에러
+//   }
+// }
