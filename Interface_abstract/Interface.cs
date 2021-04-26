@@ -55,13 +55,13 @@ class ClimateMonitor
   }
 }
 
-class MainApp
-{
-  static void Main(string[] args)
-  {
-    ClimateMonitor monitor1 = new ClimateMonitor(new FileLogger("MyLog.txt"));
-    ClimateMonitor monitor2 = new ClimateMonitor(new ConsoleLogger());
-    //monitor1.start();
-    monitor2.start();
-  }
-}
+// class MainApp
+// {
+//   static void Main(string[] args)
+//   {
+//     ClimateMonitor monitor1 = new ClimateMonitor(new FileLogger("MyLog.txt"));
+//     ClimateMonitor monitor2 = new ClimateMonitor(new ConsoleLogger());
+//     //monitor1.start();
+//     monitor2.start();
+//   }
+// }
