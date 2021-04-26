@@ -13,20 +13,20 @@ class BirthdayInfo2
   }
 }
 
-class MainApp
-{
-  static void Main(string[] args)
-  {
-    BirthdayInfo2 birth = new BirthdayInfo2();
-    Console.WriteLine($"Name : {birth.Name}");
-    Console.WriteLine($"Birthday : {birth.Birthday.ToShortDateString()}");
-    Console.WriteLine($"Age : {birth.Age}");
+// class MainApp
+// {
+//   static void Main(string[] args)
+//   {
+//     BirthdayInfo2 birth = new BirthdayInfo2();
+//     Console.WriteLine($"Name : {birth.Name}");
+//     Console.WriteLine($"Birthday : {birth.Birthday.ToShortDateString()}");
+//     Console.WriteLine($"Age : {birth.Age}");
 
-    birth.Name = "서현";
-    birth.Birthday = new DateTime(1991, 6, 28);
+//     birth.Name = "서현";
+//     birth.Birthday = new DateTime(1991, 6, 28);
 
-    Console.WriteLine($"Name : {birth.Name}");
-    Console.WriteLine($"Birthday :{birth.Birthday.ToShortDateString()}");
-    Console.WriteLine($"Age : {birth.Age}");
-  }
-}
+//     Console.WriteLine($"Name : {birth.Name}");
+//     Console.WriteLine($"Birthday :{birth.Birthday.ToShortDateString()}");
+//     Console.WriteLine($"Age : {birth.Age}");
+//   }
+// }
