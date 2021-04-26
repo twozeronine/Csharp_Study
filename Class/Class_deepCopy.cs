@@ -12,6 +12,6 @@ class MyClass
     newCopy.MyField2 = this.MyField2;
 
     return newCopy;
-  }
 
+  }
 }

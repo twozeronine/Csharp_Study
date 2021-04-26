@@ -114,6 +114,14 @@ new 키워드를 사용.
 즉석에서 사용할 복합 데이터 형식을 선언할 때 적합함.
 튜플 분해 가능.
 
+## Class Deconstruct.cs
+
+사용자 정의 형식 분해
+
+[Deconstruct 사용자 정의 형식 분해](https://docs.microsoft.com/ko-kr/dotnet/csharp/deconstruct)
+
+Deconstruct 메소드 구현을 통하여 인스턴스를 분해할 수 있다.
+
 ## Class PostionalPattern.cs
 
 위치 패턴 매칭
