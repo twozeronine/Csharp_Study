@@ -7,3 +7,5 @@ Today I Learned (TIL)
 ### 목록
 
 - [Class](https://github.com/twozeronine/Csharp_Study/tree/main/Class)
+
+- [Interface_abstract](https://github.com/twozeronine/Csharp_Study/tree/main/Interface_abstract)
