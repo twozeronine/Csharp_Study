@@ -12,7 +12,7 @@ this
 객체 내에서 자신을 지칭할 때 사용하는 키워드.  
 객체 내부에서 자신의 필드나 메소드에 접근할 때 사용한다.
 
-## [Inheritance.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Class/Inheritance.cs)
+## [Inheritance.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Class/inheritance.cs)
 
 상속
 

@@ -1,4 +1,4 @@
-## Interface.cs
+## [Interface.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Interface_abstract/Interface.cs)
 
 인터페이스
 
@@ -6,7 +6,7 @@
 메소드, 이벤트, 인덱서, 프로퍼티만 가질수있다.
 인스턴스를 못 만들지만, 파생 클래스의 객체의 위치를 담는 참조는 가능하다.
 
-## DerivedInterface.cs
+## [DerivedInterface.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Interface_abstract/DerivedInterface.cs)
 
 인터페이스를 상속하는 인터페이스
 
@@ -19,7 +19,7 @@
 1. 새로운 기능을 추가한 인터페이스를 만들고 싶을 때 상속하려는 인터페이스가 소스 코드가 아닌 어셈블리로 제공되는 경우 어셈블리 안에 있는 인터페이스를 수정할 수 없기 때문에 상속하는 방법을 사용한다.
 2. 이미 인터페이스를 상속하는 기존 클래스들이 존재할때 해당 인터페이스에 새로운 기능을 추가하면 기존 클래스들에서 구현해 주어야함.이때 기존의 소스 코드에 영향을 주지 않고 새로운 기능을 추가하고 싶을때 인터페이스를 상속.
 
-## MultiInterfaceInheritance.cs
+## [MultiInterfaceInheritance.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Interface_abstract/MultiInterfaceInheritance.cs)
 
 다중 상속 인터페이스
 
@@ -28,14 +28,14 @@
 
 > [죽음의 다이아몬드](https://ansohxxn.github.io/c%20sharp/ch9-2/)
 
-## DefaultImplementation.cs
+## [DefaultImplementation.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Interface_abstract/DefaultImplementation.cs)
 
 인터페이스 기본 구현 메소드
 
 인터페이스의 파생 클래스가 수없이 많이 생겼을때, 이와 같은 인터페이스 (레거시 코드)를 새 메소드를 추가하여 업그레이드 해야 할때
 기본적인 구현체를 가진 기본 구현 메소드를 사용하여 파생 클래스에서의 컴파일 에러를 막을 때 사용한다.
 
-## AbstractClass.cs
+## [AbstractClass.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Interface_abstract/AbstractClass.cs)
 
 추상 클래스
 
