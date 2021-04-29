@@ -1,4 +1,4 @@
-## [DeepCopy.cs](https://github.com/twozeronine/Csharp_Study/blob/main/class/DeepCopy.cs)
+## [DeepCopy.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Class/DeepCopy.cs)
 
 객체 깊은복사하기
 
@@ -122,7 +122,7 @@ new 키워드를 사용.
 
 Deconstruct 메소드 구현을 통하여 인스턴스를 분해할 수 있다.
 
-## [PostionalPattern.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Class/PostionalPattern.cs)
+## [PositionalPattern.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Class/PositionalPattern.cs)
 
 위치 패턴 매칭
 
