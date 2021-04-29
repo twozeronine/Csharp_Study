@@ -57,7 +57,7 @@ C#에서 모든 것은 객체다. .NET 의 CTS (Common Type System)에서 배열
 |    프로퍼티     | Legth( )            | 배열의 길이를 반환함.                                                                               |
 |                 | Rank( )             | 배열의 차원을 반환함.                                                                               |
 
-## [Slice](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/MoreOnArray.cs)
+## [Slice](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/Slice.cs)
 
 배열 분할하기
 
@@ -68,3 +68,13 @@ C#8.0에서 지원하는 System.Index 형식과 함께 도입된 System.Range를
 2.  int[] sliced = scores[r1];
 3.  int[] sliced2 =scores[0..3];
 ```
+
+## [2DArray](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/2DArray.cs)
+
+2차원 배열
+
+## [3DArray](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/3DArray.cs)
+
+다차원 배열
+
+다차원 배열을 선언할 때 꼭 배열의 각 차원의 크기를 지정해주자. 그래야 컴파일러가 초기화 코드와 선언문에 있는 배열의 차원 크기를 비교해서 이상이 없는지 검사 할 수 있다.
