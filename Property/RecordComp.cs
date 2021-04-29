@@ -24,25 +24,25 @@ record RTransaction3
   }
 }
 
-class MainApp
-{
-  static void Main(string[] args)
-  {
-    CTransaction trA = new CTransaction { From = "Alice", To = "Bob", Amount = 100 };
-    CTransaction trB = new CTransaction { From = "Alice", To = "Bob", Amount = 100 };
+// class MainApp
+// {
+//   static void Main(string[] args)
+//   {
+//     CTransaction trA = new CTransaction { From = "Alice", To = "Bob", Amount = 100 };
+//     CTransaction trB = new CTransaction { From = "Alice", To = "Bob", Amount = 100 };
 
-    Console.WriteLine(trA);
-    Console.WriteLine(trB);
-    Console.WriteLine($"trA equals to trB : {trA.Equals(trB)}");
+//     Console.WriteLine(trA);
+//     Console.WriteLine(trB);
+//     Console.WriteLine($"trA equals to trB : {trA.Equals(trB)}");
 
-    RTransaction3 tr1 = new RTransaction3 { From = "Alice", To = "Bob", Amount = 100 };
-    RTransaction3 tr2 = new RTransaction3 { From = "Alice", To = "Bob", Amount = 100 };
+//     RTransaction3 tr1 = new RTransaction3 { From = "Alice", To = "Bob", Amount = 100 };
+//     RTransaction3 tr2 = new RTransaction3 { From = "Alice", To = "Bob", Amount = 100 };
 
-    Console.WriteLine(tr1);
-    Console.WriteLine(tr2);
-    Console.WriteLine($"tr1 equals to tr2 : {tr1.Equals(tr2)}");
-  }
-}
+//     Console.WriteLine(tr1);
+//     Console.WriteLine(tr2);
+//     Console.WriteLine($"tr1 equals to tr2 : {tr1.Equals(tr2)}");
+//   }
+// }
 
 /* 실행결과
 Alice      -> Bob        : $100
