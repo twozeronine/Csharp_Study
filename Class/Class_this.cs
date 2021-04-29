@@ -25,3 +25,24 @@ class Employee
     return this.Position;
   }
 }
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    Employee pooh = new Employee();
+    pooh.SetName("Pooh");
+    pooh.SetPosition("Waiter");
+    Console.WriteLine($"{pooh.GetName()} {pooh.GetPosition()}");
+
+    Employee tigger = new Employee();
+    tigger.SetName("Tigger");
+    tigger.SetPosition("Cleaner");
+    Console.WriteLine($"{tigger.GetName()} {tigger.GetPosition()}");
+  }
+}
+
+/*실행 결과
+  Pooh Waiter
+  Tigger Cleaner
+*/

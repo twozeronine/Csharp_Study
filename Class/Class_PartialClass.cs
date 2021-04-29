@@ -24,3 +24,23 @@ partial class MyPartialClass
     Console.WriteLine("Method4");
   }
 }
+
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    MyPartialClass obj = new MyPartialClass();
+    obj.Method1();
+    obj.Method2();
+    obj.Method3();
+    obj.Method4();
+  }
+}
+
+/*실행 결과
+  Method1
+  Method2
+  Method3
+  Method4
+*/

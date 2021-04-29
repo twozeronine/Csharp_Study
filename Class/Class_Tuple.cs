@@ -1,15 +1,15 @@
 using System;
 
-static class TupleApp
+class MainApp
 {
-  public static void TupleExample()
+  static void Main(string[] args)
   {
     //명명되지 않은 튜플
     var a = ("슈퍼맨", 9999);
     Console.WriteLine($"{a.Item1},{a.Item2}");
 
     //명명된 튜플
-    var b = (Name: "박상현", Age: 17);
+    var b = (Name: "김삿갓", Age: 17);
     Console.WriteLine($"{b.Name},{b.Age}");
 
     //분해
@@ -25,3 +25,11 @@ static class TupleApp
     Console.WriteLine($"{b.Name},{b.Age}");
   }
 }
+
+/*실행 결과
+  슈퍼맨,9999
+  김삿갓,17
+  김삿갓,17
+  박문수,34
+  슈퍼맨,9999
+*/

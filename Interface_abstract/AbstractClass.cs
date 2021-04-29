@@ -33,3 +33,9 @@ class MainApp
     obj.PublicMethodA();
   }
 }
+
+/*실행 결과
+  Derived.AbstractMethodA()
+  AbstractBase.PrivateMethodA()
+  AbstractBase.PublicMethodA()
+*/

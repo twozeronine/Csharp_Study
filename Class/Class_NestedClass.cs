@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-class Configuration2
+class Configuration
 {
   List<ItemValue> listConfig = new List<ItemValue>();
 
@@ -27,7 +27,7 @@ class Configuration2
     private string item;
     private string value;
 
-    public void SetValue(Configuration2 config, string item, string value)
+    public void SetValue(Configuration config, string item, string value)
     {
       this.item = item;
       this.value = value;
@@ -51,3 +51,27 @@ class Configuration2
     { return value; }
   }
 }
+
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    Configuration config2 = new Configuration();
+    config2.SetConfig("Version", "V 5.0");
+    config2.SetConfig("Size", "655,324 KB");
+
+    Console.WriteLine(config2.GetConfig("Version"));
+    Console.WriteLine(config2.GetConfig("Size"));
+
+    config2.SetConfig("Version", "V 5.0.1");
+    Console.WriteLine(config2.GetConfig("Version"));
+
+  }
+}
+
+/*실행 결과
+  V 5.0
+  655,324 KB
+  V 5.0.1
+*/

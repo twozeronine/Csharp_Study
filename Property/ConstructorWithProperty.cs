@@ -13,18 +13,24 @@ class BirthdayInfo3
   }
 }
 
-// class MainApp
-// {
-//   static void Main(string[] args)
-//   {
-//     BirthdayInfo3 birth = new BirthdayInfo3()
-//     {
-//       Name = "서현",
-//       Birthday = new DateTime(1991, 6, 28)
-//     };
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    BirthdayInfo3 birth = new BirthdayInfo3()
+    {
+      Name = "서현",
+      Birthday = new DateTime(1991, 6, 28)
+    };
 
-//     Console.WriteLine($"Name:{birth.Name}");
-//     Console.WriteLine($"Birthday:{birth.Birthday.ToShortDateString()}");
-//     Console.WriteLine($"Age:{birth.Age}");
-//   }
-// }
+    Console.WriteLine($"Name:{birth.Name}");
+    Console.WriteLine($"Birthday:{birth.Birthday.ToShortDateString()}");
+    Console.WriteLine($"Age:{birth.Age}");
+  }
+}
+
+/*실행 결과
+  Name:서현
+  Birthday:1991-06-28
+  Age:30
+*/

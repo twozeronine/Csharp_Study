@@ -1,6 +1,6 @@
 using System;
 
-interface ILogger2
+interface ILogger
 {
   void WriteLog(string message);
 
@@ -10,7 +10,7 @@ interface ILogger2
   }
 }
 
-class ConsoleLogger3 : ILogger2
+class ConsoleLogger : ILogger
 {
   public void WriteLog(string message)
   {
@@ -18,16 +18,23 @@ class ConsoleLogger3 : ILogger2
   }
 }
 
-// class MainApp
-// {
-//   static void Main(string[] args)
-//   {
-//     ILogger2 logger = new ConsoleLogger3();
-//     logger.WriteLog("System Up");
-//     logger.WriteError("System Fail");
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    ILogger logger = new ConsoleLogger();
+    logger.WriteLog("System Up");
+    logger.WriteError("System Fail");
 
-//     ConsoleLogger3 clogger = new ConsoleLogger3();
-//     clogger.WriteLog("System Up"); // OK
-//     // clogger.WriteError("System Fail"); // 컴파일 에러
-//   }
-// }
+    ConsoleLogger clogger = new ConsoleLogger();
+    clogger.WriteLog("System Up"); // OK
+    // clogger.WriteError("System Fail"); // 컴파일 에러
+  }
+}
+
+/*
+  2021-04-29 오후 6:07:43,System Up
+  2021-04-29 오후 6:07:43,Error: System Fail
+  2021-04-29 오후 6:07:43,System Up
+  // clogger.WriteError("System Fail"); // 컴파일 에러
+*/

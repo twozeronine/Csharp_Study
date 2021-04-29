@@ -54,5 +54,5 @@ public class Example
   }
 }
 
-// The example displays the following output:
+// 실행 결과
 //    Hello John Adams of Boston, MA!

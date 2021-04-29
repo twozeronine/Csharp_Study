@@ -57,23 +57,32 @@ class FlyingCar2 : IRunnable, IFlyable
 
 
 
-// class MainApp
-// {
-//   static void Main(string[] args)
-//   {
-//     FlyingCar car = new FlyingCar();
-//     car.Run();
-//     car.Fly();
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    FlyingCar car = new FlyingCar();
+    car.Run();
+    car.Fly();
 
-//     IRunnable runnable = car as IRunnable;
-//     runnable.Run();
+    IRunnable runnable = car as IRunnable;
+    runnable.Run();
 
-//     IFlyable flyable = car as IFlyable;
-//     flyable.Fly();
+    IFlyable flyable = car as IFlyable;
+    flyable.Fly();
 
-//     // 포함 기법을 사용한 클래스 다중 상속 흉내내보기
-//     FlyingCar2 car2 = new FlyingCar2();
-//     car2.Fly();
-//     car2.Run();
-//   }
-// }
+    // 포함 기법을 사용한 클래스 다중 상속 흉내내보기
+    FlyingCar2 car2 = new FlyingCar2();
+    car2.Fly();
+    car2.Run();
+  }
+}
+
+/*실행 결과
+  Run Run!
+  Fly Fly
+  Run Run!
+  Fly Fly
+  Fly Fly
+  Run Run
+*/

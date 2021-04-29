@@ -1,6 +1,6 @@
 using System;
 
-class Base3
+class Base
 {
   public virtual void SealMe()
   {
@@ -8,7 +8,7 @@ class Base3
   }
 }
 
-class Derived3 : Base3
+class Derived : Base
 {
   public sealed override void SealMe()
   {
@@ -16,10 +16,11 @@ class Derived3 : Base3
   }
 }
 
-class WantToOverride : Derived3
+class WantToOverride : Derived
 {
-  // public override void SealMe()
-  // {
-  // }
-  //error CS0239: 'WantToOverride.SealMe()': 상속된 'Derived3.SealMe()' 멤버는 봉인되어 있으므로 재정의할 수 없습니다.
+  //error CS0239: 'WantToOverride.SealMe()': 상속된 'Derived.SealMe()' 멤버는 봉인되어 있으므로 재정의할 수 없습니다.
+  public override void SealMe()
+  {
+  }
 }
+

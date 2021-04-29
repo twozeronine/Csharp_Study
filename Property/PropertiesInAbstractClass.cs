@@ -25,3 +25,8 @@ class MainApp
     Console.WriteLine("Product:{0}, Product Date :{1}", product_2.SerialID, product_2.ProductDate);
   }
 }
+
+/*실행 결과
+  Product:00000, Product Date :2021-04-29 오전 12:00:00
+  Product:00001, Product Date :2021-03-07 오전 12:00:00
+*/

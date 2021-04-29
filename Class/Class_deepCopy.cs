@@ -15,3 +15,46 @@ class MyClass
 
   }
 }
+
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    Console.WriteLine("Shallow Copy");
+    {
+      MyClass source = new MyClass();
+      source.MyField1 = 10;
+      source.MyField2 = 20;
+
+      MyClass target = source;
+      target.MyField2 = 30;
+
+      Console.WriteLine($"{source.MyField1} {source.MyField2}");
+      Console.WriteLine($"{target.MyField1} {target.MyField2}");
+    }
+
+    Console.WriteLine("Deep Copy");
+
+    {
+      MyClass source = new MyClass();
+      source.MyField1 = 10;
+      source.MyField2 = 20;
+
+      MyClass target = source.DeepCopy();
+      target.MyField2 = 30;
+
+      Console.WriteLine($"{source.MyField1} {source.MyField2}");
+      Console.WriteLine($"{target.MyField1} {target.MyField2}");
+    }
+  }
+}
+
+/*실행 결과
+  Shallow Copy
+  10 30
+  10 30
+  Deep Copy
+  10 20
+  10 30
+*/

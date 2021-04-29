@@ -1,6 +1,6 @@
 using System;
 
-static class TupleApp2
+static class TupleApp
 {
   public static double GetDiscountRate(object client)
   {
@@ -14,3 +14,28 @@ static class TupleApp2
     };
   }
 }
+
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    var alice = (job: "학생", age: 17);
+    var bob = (job: "학생", age: 23);
+    var charlie = (job: "일반", age: 15);
+    var dave = (job: "일반", age: 21);
+
+    Console.WriteLine($"alice :{TupleApp.GetDiscountRate(alice)}");
+    Console.WriteLine($"bob :{TupleApp.GetDiscountRate(bob)}");
+    Console.WriteLine($"charlie :{TupleApp.GetDiscountRate(charlie)}");
+    Console.WriteLine($"dave :{TupleApp.GetDiscountRate(dave)}");
+  }
+}
+
+
+/*실행 결과
+  alice :0.2
+  bob :0.1
+  charlie :0.1
+  dave :0.05
+*/

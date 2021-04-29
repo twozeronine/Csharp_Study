@@ -55,13 +55,21 @@ class ClimateMonitor
   }
 }
 
-// class MainApp
-// {
-//   static void Main(string[] args)
-//   {
-//     ClimateMonitor monitor1 = new ClimateMonitor(new FileLogger("MyLog.txt"));
-//     ClimateMonitor monitor2 = new ClimateMonitor(new ConsoleLogger());
-//     //monitor1.start();
-//     monitor2.start();
-//   }
-// }
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    ClimateMonitor monitor1 = new ClimateMonitor(new FileLogger("MyLog.txt"));
+    ClimateMonitor monitor2 = new ClimateMonitor(new ConsoleLogger());
+    //monitor1.start();
+    monitor2.start();
+  }
+}
+
+/*실행 결과
+  온도를 입력해주세요.: 30
+  2021-04-29 오후 6:05:20 현재 온도 : 30
+  온도를 입력해주세요.: 20
+  2021-04-29 오후 6:05:21 현재 온도 : 20
+  온도를 입력해주세요.:
+*/

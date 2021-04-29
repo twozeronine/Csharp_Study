@@ -36,3 +36,28 @@ class Derived : Base
     Console.WriteLine($"{Name}.DerivedMethod()");
   }
 }
+
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    Base a = new Base("a");
+    a.BaseMethod();
+
+    Derived b = new Derived("b");
+    b.BaseMethod();
+    b.DerivedMethod();
+
+  }
+}
+
+
+/*실행 결과
+  a.Base()
+  a.BaseMethod
+  b.Base()
+  b.Derived()
+  b.BaseMethod
+  b.DerivedMethod()
+*/

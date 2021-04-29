@@ -13,17 +13,24 @@ record RTransaction
   }
 }
 
-// class MainApp
-// {
-//   static void Main(string[] args)
-//   {
-//     RTransaction tr1 = new RTransaction { From = "Alice", To = "Bob", Amount = 100 };
-//     RTransaction tr2 = new RTransaction { From = "Alice", To = "Charlie", Amount = 100 };
-//     RTransaction copytr1 = new RTransaction { From = "Alice", To = "Bob", Amount = 100 };
-//     RTransaction copytr2 = tr1;
-//     Console.WriteLine(tr1);
-//     Console.WriteLine(tr2);
-//     Console.WriteLine(tr1.Equals(copytr1));
-//     Console.WriteLine(tr1.Equals(copytr2));
-//   }
-// }
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    RTransaction tr1 = new RTransaction { From = "Alice", To = "Bob", Amount = 100 };
+    RTransaction tr2 = new RTransaction { From = "Alice", To = "Charlie", Amount = 100 };
+    RTransaction copytr1 = new RTransaction { From = "Alice", To = "Bob", Amount = 100 };
+    RTransaction copytr2 = tr1;
+    Console.WriteLine(tr1);
+    Console.WriteLine(tr2);
+    Console.WriteLine(tr1.Equals(copytr1));
+    Console.WriteLine(tr1.Equals(copytr2));
+  }
+}
+
+/*실행 결과
+  Alice      -> Bob        : $100
+  Alice      -> Charlie    : $100
+  True
+  True
+*/
