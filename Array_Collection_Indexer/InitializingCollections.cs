@@ -32,6 +32,13 @@ class MainApp
     foreach (object item in list2)
       WriteLine($"ArrayList2 : {item}");
     WriteLine();
+
+    Hashtable hashtable = new Hashtable()
+    {{"하나",1},{"둘",2},{"셋",3}};
+    WriteLine($"Hashtable[하나] : {hashtable["하나"]}");
+    WriteLine($"Hashtable[둘] : {hashtable["둘"]}");
+    WriteLine($"Hashtable[셋] : {hashtable["셋"]}");
+
   }
 }
 
