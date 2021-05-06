@@ -87,7 +87,7 @@ C#8.0에서 지원하는 System.Index 형식과 함께 도입된 System.Range를
 
 # Collection
 
-## [UsingList](<(https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/UsingList.cs)>)
+## [UsingList](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/UsingList.cs)
 
 ArrayList 배열과 가장 닮은 컬렉션. Add(), RemoveAt(), Insert() 등의 메소드가 있다.
 
@@ -101,3 +101,9 @@ ArrayList가 다양한 형식의 객체를 담을 수 있는 이유는 다음의
 ```
 
 object 형식의 매개변수를 받고 있다.모든 형식은 object를 상속하므로 obejct 형식으로 간주되어 Add()메소드에 int 형식의 데이터를 넣더라도 정수 형식 그대로 입력되는 것이 아니라 object형식으로 박싱되어 입력된다. 반대로 ArrayList의 요소에 접근해서 사용할 때는 원래의 데이터 형식으로 언박싱이 이루어진다. 박싱과 언박싱은 적지 않은 오버헤드를 요구하는 작업이다. 그래서 해결 방법으로 Generic Collection을 사용한다.
+
+## [UsingQueue](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/UsingQueue.cs)
+
+Queue
+
+FIFO(First In First Out)형태의 자료구조. 프린터가 여러 문서를 출력할 때, 인터넷 동영상 스트리밍 서비스에서 콘텐츠를 버퍼링할 때 등 많은 곳에 쓰인다.
