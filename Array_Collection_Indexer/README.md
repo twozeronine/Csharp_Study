@@ -78,3 +78,26 @@ C#8.0에서 지원하는 System.Index 형식과 함께 도입된 System.Range를
 다차원 배열
 
 다차원 배열을 선언할 때 꼭 배열의 각 차원의 크기를 지정해주자. 그래야 컴파일러가 초기화 코드와 선언문에 있는 배열의 차원 크기를 비교해서 이상이 없는지 검사 할 수 있다.
+
+## [JaggedArray](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/JaggedArray.cs)
+
+가변 배열
+
+배열을 요소로 갖는 배열. 가변 배열이라는 말보단 "들쭉날쭉한" 형태의 배열이라고 기억하자.
+
+# Collection
+
+## [UsingList](<(https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/UsingList.cs)>)
+
+ArrayList 배열과 가장 닮은 컬렉션. Add(), RemoveAt(), Insert() 등의 메소드가 있다.
+
+### ArrayList가 다양한 형식의 객체를 담을 수 있는 이유
+
+ArrayList가 다양한 형식의 객체를 담을 수 있는 이유는 다음의 메소드의 선언을 보면 알 수 있다.
+
+```C#
+1. public virtual int Add( Object value)
+2. public virtual void Insert( int index, Object value)
+```
+
+object 형식의 매개변수를 받고 있다.모든 형식은 object를 상속하므로 obejct 형식으로 간주되어 Add()메소드에 int 형식의 데이터를 넣더라도 정수 형식 그대로 입력되는 것이 아니라 object형식으로 박싱되어 입력된다. 반대로 ArrayList의 요소에 접근해서 사용할 때는 원래의 데이터 형식으로 언박싱이 이루어진다. 박싱과 언박싱은 적지 않은 오버헤드를 요구하는 작업이다. 그래서 해결 방법으로 Generic Collection을 사용한다.
