@@ -114,3 +114,9 @@ FIFO(First In First Out)형태의 자료구조. 프린터가 여러 문서를 �
 Stack
 
 LIFO(Last In First Out)형태의 자료구조.
+
+## [UsingHashtable](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/UsingHashtable.cs)
+
+Hashtable
+
+Key와 Value의 쌍으로 이루어진 데이터를 다룰 때 사용한다. Hashtable은 배열에서 인덱스를 이용해서 배열 요소에 접근하는 것에 준하는 탐색 속도를 자랑한다. ArrayList에서 원하는 데이터를 찾으려면 컬렉션을 정렬해 이진 탐색을 수행하거나 순차적으로 리스트를 탐색해나가지만, Hashtable은 키를 이용해서 단번에 데이터가 저장된 컬렉션 내의 주소를 계산해낸다. 이 작업을 Hashing이라고 함.
