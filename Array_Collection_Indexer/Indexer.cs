@@ -13,17 +13,17 @@ class MyList
   }
 
   // 인덱서
-  public int this[int dz]
+  public int this[int index]
   {
-    get { return array[dz]; }
+    get { return array[index]; }
     set
     {
-      if (dz >= array.Length)
+      if (index >= array.Length)
       {
-        Array.Resize<int>(ref array, dz + 1);
+        Array.Resize<int>(ref array, index + 1);
         Console.WriteLine($"Array Resized : {array.Length}");
       }
-      array[dz] = value;
+      array[index] = value;
     }
   }
 
