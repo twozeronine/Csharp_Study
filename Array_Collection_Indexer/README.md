@@ -126,3 +126,9 @@ Key와 Value의 쌍으로 이루어진 데이터를 다룰 때 사용한다. Has
 컬렉션을 초기화하는 방법
 
 ArrayList , Queue , Stack은 배열의 도움을 받아 간단하게 초기화를 수행 할 수 있다. 그중에 ArrayList는 배열의 도움 없이 직접 컬렉션 초기자를 이용해서 초기화할 수 있다.
+
+## [Indexer](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/Indexer.cs)
+
+인덱서
+
+인덱서는 인덱스를 이용해서 객체 내의 데이터에 접근하게 해주는 프로퍼티라고 생각하면 이해하기 쉽다. 객체내의 데이터를 마치 배열처럼 사용할 수 있게 해줌.
