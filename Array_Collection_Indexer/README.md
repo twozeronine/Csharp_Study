@@ -132,3 +132,9 @@ ArrayList , Queue , Stack은 배열의 도움을 받아 간단하게 초기화�
 인덱서
 
 인덱서는 인덱스를 이용해서 객체 내의 데이터에 접근하게 해주는 프로퍼티라고 생각하면 이해하기 쉽다. 객체내의 데이터를 마치 배열처럼 사용할 수 있게 해줌.
+
+## [Yield](https://github.com/twozeronine/Csharp_Study/blob/main/Array_Collection_Indexer/Yield.cs)
+
+foreach가 가능한 객체 만들기
+
+foreach 구문은 IEnumerable 인터페이스를 상속하는 형식만 지원함. 이때 yield문을 이용하면 임시로 IEnumerator의 GetEnumerator()를 구현 할 수 있다. yield문을 이용하면 IEnumerator를 상속하는 클래스를 따로 구현하지 않아도 컴파일러가 자동으로 해당 인터페이스를 구현한 클래스를 생성해준다. yield return 문은 현재 메소드(GetEnumerator())의 실행은 일시 정지시켜놓고 호출자에게 결과를 반환함. 메소드가 다시 호출되면, 일시 정지된 실행을 복구하여 yield return 또는 yield break 문을 만날 때까지 나머지 작업을 실행함.
