@@ -16,6 +16,10 @@ try절의 코드 블록에서 예외가 일어나지 않을 경우에 실행되�
 
 ## [Throw.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/Throw.cs)
 
+## [ThrowExpression.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/ThrowExpression.cs)
+
 예외 던지기
 
-throw문을 사용하여 예외를 던질 수 있다.
+throw문을 사용하여 예외를 던질 수 있다. C# 7.0부터는 식으로도 사용할 수 있도록 개선되었다.
+
+## [Throw.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/Throw.cs)
