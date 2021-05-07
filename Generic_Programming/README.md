@@ -44,3 +44,9 @@ Generic Stack
 ### [UsingGenericDictionary.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Generic_Programming/UsingGenericDictionary.cs)
 
 Generic Dictionary
+
+## [EnumeralbeGeneric.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Generic_Programming/EnumeralbeGeneric.cs)
+
+foreach를 사용할 수 있는 일반화 클래스.
+
+Generic class도 IEnumerable 인터페이스를 상속하여 foreach를 통해 순회할 수 있지만, 요소를 순회할 때마다 형식 변환을 수행하는 오버로드가 발생한다. 때문에 IEnumerable의 일반화 버전인 IEnumeralbe\<T> 인터페이스를 사용하여 형식 변환으로 인한 성능 저하 문제를 해결 할 수 있다.
