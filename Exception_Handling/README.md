@@ -22,4 +22,14 @@ try절의 코드 블록에서 예외가 일어나지 않을 경우에 실행되�
 
 throw문을 사용하여 예외를 던질 수 있다. C# 7.0부터는 식으로도 사용할 수 있도록 개선되었다.
 
-## [Throw.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/Throw.cs)
+## [Finally.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/Finally.cs)
+
+try~catch와 finally
+
+try~catch문에서 자신이 소속된 try 절이 실행 된다면 finally 절은 어떤 경우라도 실행된다. 심지어 try 절 안에서 return 문이나 throw 문이 사용되더라도 finally 절은 꼭 실행된다.
+
+## [MyException.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/Finally.cs)
+
+사용자 정의 예외 클래스 만들기
+
+C#에서 사용하는 모든 예외 객체는 System.Exception 클래스로부터 파생되어야 한다. 그리하여 Exception 클래스를 상속하기만 하면 새로운 예외 클래스를 만들 수 있다.
