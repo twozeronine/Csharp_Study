@@ -28,8 +28,14 @@ try~catch와 finally
 
 try~catch문에서 자신이 소속된 try 절이 실행 된다면 finally 절은 어떤 경우라도 실행된다. 심지어 try 절 안에서 return 문이나 throw 문이 사용되더라도 finally 절은 꼭 실행된다.
 
-## [MyException.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/Finally.cs)
+## [MyException.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/MyException.cs)
 
 사용자 정의 예외 클래스 만들기
 
 C#에서 사용하는 모든 예외 객체는 System.Exception 클래스로부터 파생되어야 한다. 그리하여 Exception 클래스를 상속하기만 하면 새로운 예외 클래스를 만들 수 있다.
+
+## [ExceptionFiltering.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Exception_Handling/ExceptionFiltering.cs)
+
+예외 필터하기
+
+C# 6.0부터는 catch 절이 받아들일 예외 객체에 제약 사항을 명시해서 해당 조건을 만족하는 예외 객체에 대해서만 예외 처리 코드를 실행할 수 있도록 하는 예외 필터가 도입되었습니다.
