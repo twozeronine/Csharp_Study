@@ -24,3 +24,23 @@ Generic Class
 | where T : 기반\_클래스\_이름 | T는 명시한 기반 클래스의 파생 클래스여야 함.                                                                      |
 | where T : 인터페이스\_이름   | T는 명시한 인터페이스를 반드시 구현해야 합니다. 인터페이스\_이름에는 여러 개의 인터페이스를 명시할 수도 있습니다. |
 | where T : U                  | T는 또 다른 형식 매개변수 U로부터 상속받은 클래스여야 합니다.                                                     |
+
+## Generic Collections
+
+일반화 컬렉션. 컴파일할 때 컬렉션에서 사용할 형식이 결정되고, object형식 기반의 컬렉션과는 다르게 쓸데없는 형식 변환을 일으키지 않는다.
+
+### [UsingGenericList.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Generic_Programming/UsingGenericList.cs)
+
+Generic List
+
+### [UsingGenericQueue.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Generic_Programming/UsingGenericQueue.cs)
+
+Generic Queue
+
+### [UsingGenericStack.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Generic_Programming/UsingGenericStack.cs)
+
+Generic Stack
+
+### [UsingGenericDictionary.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Generic_Programming/UsingGenericDictionary.cs)
+
+Generic Dictionary

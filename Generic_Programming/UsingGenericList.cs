@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+
+class MainApp
+{
+  static void Main(string[] args)
+  {
+    List<int> list = new List<int>();
+    for (int i = 0; i < 5; i++)
+      list.Add(i);
+
+    foreach (int element in list)
+      Console.WriteLine($"{element}");
+    Console.WriteLine();
+
+    list.RemoveAt(2);
+
+    foreach (int element in list)
+      Console.WriteLine($"{element}");
+    Console.WriteLine();
+
+    list.Insert(2, 2);
+
+    foreach (int element in list)
+      Console.WriteLine($"{element}");
+    Console.WriteLine();
+  }
+}
+
+/*실행 결과
+0
+1
+2
+3
+4
+
+0
+1
+3
+4
+
+0
+1
+2
+3
+4
+
+*/
