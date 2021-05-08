@@ -24,3 +24,9 @@ C#에서는 콜백을 맡아 실행하는 일을 '대리자'가 담당함. 대�
 대리자 체인
 
 대리자에는 재미있는 속성으로 대리자 하나가 여러 개의 메소드를 동시에 참조할 수 있다. 결합해놓은 대지라를 호출하면 데리자 체인을 따라 차례대로 연결된 메소드들이 호출된다.
+
+## [AnonymousMethod.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Delegate_event/AnonymousMethod.cs)
+
+익명 메소드
+
+익명 메소드란 이름이 없는 메소드를 말합니다. 익명 메소드는 특정 상황에서 유용하게 사용할 수 있습니다.
