@@ -65,3 +65,19 @@ List<int> list = Activator.CreateInstance<List<int>>();
 3. 2에서 생성한 모듈 안에 TypeBuilder로 클래스(형식)을 만들어 넣는다.
 4. 3에서 생성한 클래스 안에 메소드(MethodBuilder 이용)나 프로퍼티(PropertyBuilder 이용)을 만들어 넣는다.
 5. 4에서 생성한 것이 메소드라면, ILGenerator를 이용해서 메소드 안에 CPU가 실행할 IL 명령들을 넣는다.
+
+## [EmitTest.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/EmitTest.cs)
+
+### 애트리뷰트
+
+> 메타데이터란 데이터의 데이터를 말한다. 가령 C# 코드도 데이터지만 이 코드에 대한 정보, 즉 애트리뷰트나 리플렉션을 통해 얻는 정보들도 C# 코드의 메타데이터라고 할 수 있다.
+
+애트리뷰트는 코드에 개한 부가 정보를 기록하고 읽을 수 있는 기능이다. 주석과 다른 점은 주석은 사람이 읽고 쓰는 정보라면, 애트리뷰트는 사람이 작성하고 컴퓨터가 읽는다.
+
+```C#
+  [ 애트리뷰트_이름( 애트리뷰트_매개변수) ]
+  public void MyMethod()
+  {
+    //..
+  }
+```
