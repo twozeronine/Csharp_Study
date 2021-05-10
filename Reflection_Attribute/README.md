@@ -31,3 +31,19 @@ GetType() 메소드는 Type 형식의 결과를 반환한다.
 | GetProperties()       | PropertyInfo[]    | 해당 형식의 프로퍼티 목록을 반환합니다.            |
 
 > 훨씬더 많은 기능은 [MSDN Type클래스](https://docs.microsoft.com/ko-kr/dotnet/api/system.type?view=net-5.0)
+
+## [DynamicInstance.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/DynamicInstance.cs)
+
+### 리플렉션을 이용해서 객체 생성하고 이용하기
+
+리플렉션을 사용하여 특정 형식의 인스턴스를 만들고 데이터를 할당하며 메소드를 호출 할 수 있다. 리플렉션을 이용해서 동적으로 인스턴스를 만들기 위해서는 System.Activator 클래스의 도움이 필요하다. 인스턴스를 만들고자 하는 형식의 Type 객체를 매개변수에 넘기면, Activator.CreateInstance() 메소드는 입력받은 형식의 인스턴스를 생성하여 반환한다.
+
+```C#
+object a = Activator.CreateInstance(typeof(int));
+```
+
+일반화를 지원하는 버전의 CreateInstance() 메소드
+
+```C#
+List<int> list = Activator.CreateInstance<List<int>>();
+```
