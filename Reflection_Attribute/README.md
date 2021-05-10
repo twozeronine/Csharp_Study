@@ -93,3 +93,11 @@ C# 5.0 버전 부터 호출자 정보 애트리뷰트가 도입됐다. 호출자
 | CallerMemeberNameAttribute | 현재 메소드를 호출한 메소드 또는 프로퍼티의 이름을 나타낸다.                                                |
 |  CallerFilePathAttribute   | 현재 메소드가 호출된 소스 파일 경로를 나타낸다. 이때 경로는 소스 코드를 컴파일할 때의 전체 경로를 나타낸다. |
 | CallerLineNumberAttribute  | 현재 메소드가 호출된 소스 파일 내의 행(Line ) 번호를 나타낸다.                                              |
+
+## [HistoryAttribute.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/HistoryAttribute.cs)
+
+### 내가 만드는 애트리뷰트
+
+.NET이 제공하는 애트리뷰트는 Obsolete 말고도 그 종류가 상당히 많습니다. C나 C++로 작성된 네이티브 DLL에 있는 함수를 호출할 때 사용하는 \[DLLImport], 조건부 메소드 실행을 지정할 때 사용하는 \[Conditional] 등이 그 예입니다.
+
+자신만의 애트리뷰트를 만드는데 필요한 [System.AttributeUsage](https://docs.microsoft.com/ko-kr/dotnet/api/system.attributeusageattribute?view=net-5.0)을 이용하여 애트리뷰트가 어떤 대상을 설명할지, 이 애트리뷰트를 중복해서 사용할 수 있는지의 여부 등을 추가할 수 있다. System.AttributeUsage의 첫 번째 매개변수는 지금 선언하고 있는 애트리뷰트의 설명 대상이 무엇인지 나타내는데, 이것을 [Attribute Target](https://docs.microsoft.com/ko-kr/dotnet/api/system.attributetargets?view=net-5.0)이라고 한다.
