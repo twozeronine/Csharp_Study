@@ -81,3 +81,15 @@ List<int> list = Activator.CreateInstance<List<int>>();
     //..
   }
 ```
+
+## [CallerInfo.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/CallerInfo.cs)
+
+### 호출자 정보 애트리뷰트
+
+C# 5.0 버전 부터 호출자 정보 애트리뷰트가 도입됐다. 호출자 정보는 메소드의 매개변수에 사용되며 메소드의 호출자 이름, 호출자 메소드가 정의된 소스 파일 경로, 심지어 소스 파일 내의 행 번호까지 알 수 있다.
+
+|         애트리뷰트         | 설명                                                                                                        |
+| :------------------------: | :---------------------------------------------------------------------------------------------------------- |
+| CallerMemeberNameAttribute | 현재 메소드를 호출한 메소드 또는 프로퍼티의 이름을 나타낸다.                                                |
+|  CallerFilePathAttribute   | 현재 메소드가 호출된 소스 파일 경로를 나타낸다. 이때 경로는 소스 코드를 컴파일할 때의 전체 경로를 나타낸다. |
+| CallerLineNumberAttribute  | 현재 메소드가 호출된 소스 파일 내의 행(Line ) 번호를 나타낸다.                                              |
