@@ -14,3 +14,10 @@ foreach 문의 반복 변수는 데이터 원본으로부터 데이터를 담아
 여러 개의 데이터 원본에 질의하기
 
 여러 개의 데이터 원본에 접근하려면 from문을 중첩해서 사용하면 된다.
+
+## [FromFrom.cs](https://github.com/twozeronine/Csharp_Study/blob/main/LINQ/FromFrom.cs)
+
+group by로 데이터 분류하기
+
+group by 절을 통하여 데이터를 분류할 수 있다.  
+group A by B into C // A에는 from 절에서 뽑아낸 범위 변수, B에는 분류 기준 , C에는 그룹 변수를 위치시키면 된다.
