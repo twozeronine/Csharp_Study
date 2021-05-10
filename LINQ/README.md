@@ -44,3 +44,30 @@ join b in B on a.XXXX equals b.YYYY
 외부 조인은 기본적으로 내부 조인과 비슷하지만 조인 결과에 기준이 되는 데이터 원본이 모두 포함된다는 점이 다르다.
 
 > LINQ는 원래 DBMS에서 사용하던 SQL을 본떠 프로그래밍 언어 안에 통합한 것이다. LINQ의 외부 조인은 SQL에서 본떠서 만든것인데, 왼쪽 조인, 오른쪽 조인, 완전 외부 조인 이렇게 3가지 방식중에서 왼쪽 조인만을 지원한다.
+
+## [SimpleLinq2.cs](https://github.com/twozeronine/Csharp_Study/blob/main/LINQ/SimpleLinq2.cs)
+
+LINQ 표준 연산자
+
+마이크로소프트는 LINQ 쿼리식이 실행될 수 있도록 CLR을 개선하는 대신, C# 컴파일러와 VB 컴파일러를 업그레이드했다. 이들 컴파일러가 각각 LINQ 쿼리식을 CLR이 이해할 수 있는 코드로 번역해주도록 만들었다.
+
+```C#
+    var profiles = from     profile in arrProfile
+                   where    profile.Height < 175
+                   orderby  profile.Height
+                   select   new { Name = profile.Name , Height = profile.Height };
+```
+
+> C# 컴파일러는 다음과 같은 코드로 번역한다.
+
+```C#
+    var profiles = arrProfile
+                      .Where(  profile => profile.Height < 175 )
+                      .OrderBy(profile => profile.Heigth )
+                      .Select( profile =>
+                              new
+                              {
+                                  Name   =  profile.Name,
+                                  Height =  profile.Height
+                              });
+```
