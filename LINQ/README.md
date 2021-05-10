@@ -76,7 +76,7 @@ LINQ 표준 연산자
 
 LINQ 표준 연산자 2
 
-> [IEnumeralbe<T>의 확장 메소드](https://docs.microsoft.com/ko-kr/dotnet/api/system.linq.enumerable?view=net-5.0#-----)
+> [IEnumeralbe\<T>의 확장 메소드](https://docs.microsoft.com/ko-kr/dotnet/api/system.linq.enumerable?view=net-5.0#-----)
 
 표준 LINQ 연산 메소드의 갯수는 53개 지만 그 중에 C#의 쿼리식에서 지원하는 것은 11개 뿐이다.
 

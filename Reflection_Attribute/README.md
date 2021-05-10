@@ -47,3 +47,21 @@ object a = Activator.CreateInstance(typeof(int));
 ```C#
 List<int> list = Activator.CreateInstance<List<int>>();
 ```
+
+## [EmitTest.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/EmitTest.cs)
+
+### 형식 내보내기
+
+리플렉션을 이용하면 프로그램 실행 중에 원하는 형식의 정보를 읽어낼 수 있을 뿐 아니라, 그 형식의 인스턴스도 만들 수 있으며 심지어는 프로퍼티나 필드에 값을 할당하고 메소드를 호출할 수도 있습니다. 더 나아가 프로그램 실행중에 새로운 형식을 만들어낼 수 있는 기능도 제공합니다.
+
+동적으로 새로운 형식을 만드는 작업은 System.Reflection.Emit 네임스페이스에 있는 클래스들을 통해 이루어집니다.
+
+> [System.Reflection.Emit 네임스페이스](https://docs.microsoft.com/ko-kr/dotnet/api/system.reflection.emit?view=net-5.0)
+
+이 클래스를 사용하는 요령은 다음 순서와 같다.
+
+1. AssemblyBuilder를 이용해서 어셈블리를 만든다.
+2. ModuleBuilder를 이용해서 1에서 생성한 어셈블리 안에 모듈을 만들어 넣는다.
+3. 2에서 생성한 모듈 안에 TypeBuilder로 클래스(형식)을 만들어 넣는다.
+4. 3에서 생성한 클래스 안에 메소드(MethodBuilder 이용)나 프로퍼티(PropertyBuilder 이용)을 만들어 넣는다.
+5. 4에서 생성한 것이 메소드라면, ILGenerator를 이용해서 메소드 안에 CPU가 실행할 IL 명령들을 넣는다.
