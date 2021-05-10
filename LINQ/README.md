@@ -8,3 +8,9 @@ LINQ의 기본: from, where, orderby ,select
 ### LINQ의 범위 변수와 foreach 문의 반복 변수의 차이점
 
 foreach 문의 반복 변수는 데이터 원본으로부터 데이터를 담아내지만, 범위 변수는 실제로 데이터를 담지는 않습니다. 그래서 쿼리식 외부에서 선언된 변수에 범위 변수의 데이터를 복사해 넣는다든가 하는 일은 할 수 없다. 범위 변수는 오로지 LINQ 질의 안에서만 통용되며, 질의가 실행될 때 어떤 일이 일어날지를 묘사하기 위해 도입됐기 때문이다.
+
+## [FromFrom.cs](https://github.com/twozeronine/Csharp_Study/blob/main/LINQ/FromFrom.cs)
+
+여러 개의 데이터 원본에 질의하기
+
+여러 개의 데이터 원본에 접근하려면 from문을 중첩해서 사용하면 된다.
