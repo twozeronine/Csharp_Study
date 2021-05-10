@@ -15,9 +15,32 @@ foreach 문의 반복 변수는 데이터 원본으로부터 데이터를 담아
 
 여러 개의 데이터 원본에 접근하려면 from문을 중첩해서 사용하면 된다.
 
-## [FromFrom.cs](https://github.com/twozeronine/Csharp_Study/blob/main/LINQ/FromFrom.cs)
+## [GroupBy.cs](https://github.com/twozeronine/Csharp_Study/blob/main/LINQ/GroupBy.cs)
 
 group by로 데이터 분류하기
 
 group by 절을 통하여 데이터를 분류할 수 있다.  
 group A by B into C // A에는 from 절에서 뽑아낸 범위 변수, B에는 분류 기준 , C에는 그룹 변수를 위치시키면 된다.
+
+## [Join.cs](https://github.com/twozeronine/Csharp_Study/blob/main/LINQ/Join.cs)
+
+두 데이터 원본을 연결하는 join
+
+각 데이터 원본에서 특정 필드의 값을 비교하여 일치하는 데이터끼리 연결을 수행한다.
+
+### 내부 조인
+
+내부 조인은 교집합과 비슷하다. 내부 조인은 첫 번째 데이터 원본과 두 번째 데이터 원본의 특정 필드를 비교해서 일치하는 데이터를 반환한다.
+
+```C#
+from a in A
+join b in B on a.XXXX equals b.YYYY
+```
+
+기준 데이터 a는 from 절에서 뽑아낸 범위 변수이고, 연결 대상 데이터 b는 join절에서 뽑아낸 변수이다. join절의 on 키워드는 조인 조건을 수반한다. 이때 on 절의 조인 조건은 "동등(Equality)"만 허용된다.
+
+### 외부 조인
+
+외부 조인은 기본적으로 내부 조인과 비슷하지만 조인 결과에 기준이 되는 데이터 원본이 모두 포함된다는 점이 다르다.
+
+> LINQ는 원래 DBMS에서 사용하던 SQL을 본떠 프로그래밍 언어 안에 통합한 것이다. LINQ의 외부 조인은 SQL에서 본떠서 만든것인데, 왼쪽 조인, 오른쪽 조인, 완전 외부 조인 이렇게 3가지 방식중에서 왼쪽 조인만을 지원한다.
