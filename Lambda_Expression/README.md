@@ -32,3 +32,9 @@ Func와 Action으로 더 간편하게 무명 함수 만들기
 Expression 클래스 자신은 abstract로 선언되어 자신의 인스턴스는 만들 수 없지만, 파생 클래스의 인스턴스를 생성하는 정적 팩토리 메소드를 제공한다.
 
 식 트리는 코드를 데이터로서 보관이 가능하다. 파일에 저장할 수도 있으며 네트워크를 통해 전달할 수도 있다. 심지어 식트리 데이터를 데이터베이스 서버에 보내서 실행시킬 수도 있다. 데이터베이스 처리를 위한 식 트리는 LINQ에서 사용된다.
+
+## [ExpressionBodiedMember.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Lambda_Expression/ExpressionBodiedMember.cs)
+
+식으로 이루어지는 멤버
+
+메소드를 비롯하여 속성(인덱서), 생성자, 종료자는 공통된 특징으로 클래스의 멤버로서 본문이 중괄호{}로 만들어져 있다. 이러한 멤버의 본문을 식만으로 구현할 수 있는데, 이렇게 식으로 구현된 멤버를 영어로는 "Expression-Bodied Member"라고 한다.
