@@ -66,7 +66,7 @@ List<int> list = Activator.CreateInstance<List<int>>();
 4. 3에서 생성한 클래스 안에 메소드(MethodBuilder 이용)나 프로퍼티(PropertyBuilder 이용)을 만들어 넣는다.
 5. 4에서 생성한 것이 메소드라면, ILGenerator를 이용해서 메소드 안에 CPU가 실행할 IL 명령들을 넣는다.
 
-## [EmitTest.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/EmitTest.cs)
+## [BasicAttribute.cs](https://github.com/twozeronine/Csharp_Study/blob/main/Reflection_Attribute/BasicAttribute.cs)
 
 ### 애트리뷰트
 
